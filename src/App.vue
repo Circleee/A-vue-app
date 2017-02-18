@@ -49,6 +49,7 @@ export default {
   .tab .tab-item a{
     color: #505559;
     font-size: 14px;
+
   }
   .tab .tab-item a.v-link-active{
     color: #F30E11;
