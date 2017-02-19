@@ -9,10 +9,6 @@ import seller from './comp/seller.vue';
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-// new Vue({
-//   el: 'body',
-//   components: { App }
-// })
 
 let app  =  Vue.extend(App);
 
@@ -34,4 +30,4 @@ router.map({
 
 router.start(app,'#app');
 
-// router.go('/ratings');
+router.go('/goods');

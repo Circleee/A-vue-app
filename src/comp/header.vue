@@ -2,7 +2,7 @@
 	<div class="headerwrap">
 		<div class="header">
 			<div class="avatar">
-				<img  width="64" height="64"></div>
+				<img  width="64" height="64" src="./img/logo.jpg"></div>
 			<div class="title">
 				<div class="brand">
 					<span>{{seller.name}}</span>
@@ -12,20 +12,25 @@
 					/
 					<span>{{seller.deliveryTime}}送达</span>
 				</div>
-				<div class="acti">
-					<span>早先大家爱看升级代理开始角</span>
+				<div class="acti" @click = 'showacti =!showacti'>
+					<span class="icon" :class="classMap[1]"></span>
+					<span>{{seller.supports[0].description}}</span>
 				</div>
-				<div class="actinum" @click = 'showacti =!showacti'>ds</div>
+				<div class="actinum" @click = 'showacti =!showacti'>{{acnum}}个</div>
 			</div>
 		</div>
-		<div class="news">
-			<p>{{seller.bulletin}}</p>
+		<div class="news" @click = 'showacti =!showacti'>
+			<p><span class="bullicon"></span>{{seller.bulletin}}</p>
 		</div>
+		<div class="background">
+		    <img width="256%" height="256%" src="./img/logo.jpg">
+		 </div>
 	</div>
 	<div class="showacti"  v-show="showacti" transition = 'anim'>
 		<div class="saheader">
 			<h4>{{seller.name}}</h4>
-			<div class="star"></div>
+			<!-- <div class="star"></div> -->
+			<star :seller='seller'></star>
 		</div>
 		<div class="favorable">
 			<div class="title">
@@ -56,10 +61,15 @@
 </template>
 
 <script>
+import star from './star.vue';
 export default{
+	components:{
+		"star":star
+	},
 	data:function () {
 		return {
-			showacti:false
+			showacti:false,
+			acnum:this.seller.supports.length
 		}
 	},
 	created() {
@@ -71,7 +81,19 @@ export default{
 
 <style  type="text/css">
 	.headerwrap{
-		background: #cdcdcd;
+		position: relative;
+		overflow: hidden;
+		background: rgba(7,17,27,0.5);
+	}
+	.headerwrap .background{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    z-index: -1;
+	    -webkit-filter: blur(10px);
+	    filter: blur(10px);
 	}
 	.headerwrap .header{
 		padding: 24px 12px 18px 24px;
@@ -102,9 +124,33 @@ export default{
 		color: #fff;
 	}
 	.headerwrap .header .title .acti{
-		line-height: 12px;
+		line-height: 16px;
 		font-size: 10px;
 		color: #fff;
+	}
+	.headerwrap .header .title .acti span.icon{
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		vertical-align: top;
+		background-size: 100% 100%;
+		margin-right: 6px;
+		background-image: url('img/decrease_1@3x.png');
+	}
+	.headerwrap .header .title .acti span.icon.decrease{
+		background-image: url('img/decrease_1@3x.png');
+	}
+	.headerwrap .header .title .acti span.icon.discount{
+		background-image: url('img/discount_1@3x.png');
+	}
+	.headerwrap .header .title .acti span.icon.guarantee{
+		background-image: url('img/guarantee_1@3x.png');
+	}
+	.headerwrap .header .title .acti span.icon.invoice{
+		background-image: url('img/invoice_1@3x.png');
+	}
+	.headerwrap .header .title .acti span.icon.special{
+		background-image: url('img/special_1@3x.png');
 	}
 	.headerwrap .header .title {
 		position: relative;
@@ -132,6 +178,16 @@ export default{
 		margin: 0px 12px;
 		color: #fff;
 		font-weight: 200
+	}
+	.headerwrap .news .bullicon{
+		width: 22px;
+		height: 12px;
+		display: inline-block;
+		background-image: url(./img/bulletin@3x.png);
+		background-size: 22px 12px;
+		margin-right: 10px;
+		position: relative;
+		top: 1px;
 	}
 	.showacti{
 		background: rgba(7,17,27,0.8);

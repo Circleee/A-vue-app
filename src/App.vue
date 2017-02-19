@@ -13,6 +13,7 @@
       </div>
     </div>
     <router-view></router-view>
+    <h1>{{score}}</h1>
   </div>
 </template>
 
