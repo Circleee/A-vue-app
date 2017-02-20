@@ -195,6 +195,7 @@ export default{
 		width: 100%;
 		height: 100%;
 		top: 0px;
+		overflow: auto;
 	}
 	.anim-transition{
 		transition: all 0.5s ease;
@@ -209,6 +210,7 @@ export default{
 	}
 	.showacti{
 		color: #fff;
+		z-index: 9;
 	}
 	.showacti .notice,.showacti .favorable{
 		width: 80%;
@@ -285,9 +287,9 @@ export default{
 	}
 	.showacti  .dele{
 		font-size: 32px;
-		position: absolute;
 		bottom: 32px;
 		left: 50%;
-		margin-left: -10.3px;
+		text-align: center;
+		margin: 30px 0px;
 	}
 </style>

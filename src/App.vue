@@ -3,7 +3,7 @@
     <vheader :seller="seller"></vheader>
     <div class="tab">
       <div class="tab-item">
-        <a href="#" v-link="{path:'/goods'}">商品</a>
+        <a href="#" v-link="{path:'/goods'}">商家</a>
       </div>
       <div class="tab-item">
         <a href="#" v-link="{path:'/ratings'}">评价</a>
@@ -12,7 +12,7 @@
         <a href="#" v-link="{path:'/seller'}">商家</a>
       </div>
     </div>
-    <router-view></router-view>
+    <router-view :seller="seller"></router-view>
     <h1>{{score}}</h1>
   </div>
 </template>

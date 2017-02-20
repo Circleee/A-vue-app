@@ -56,7 +56,7 @@ export default {
         {
           "name": "皮蛋瘦肉粥",
           "price": 10,
-          "oldPrice": "",
+          "oldPrice": 12,
           "description": "咸粥",
           "sellCount": 229,
           "rating": 100,
@@ -395,7 +395,7 @@ export default {
       ]
     },
     {
-      "name": "单人精彩套餐",
+      "name": "单人套餐",
       "type": 2,
       "foods": [
         {
@@ -421,7 +421,7 @@ export default {
       ]
     },
     {
-      "name": "冰爽饮品限时特惠",
+      "name": "冰爽饮品",
       "type": 1,
       "foods": [
         {
