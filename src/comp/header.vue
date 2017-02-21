@@ -10,7 +10,7 @@
 				<div class="deli">
 					<span>{{seller.description}}</span>
 					/
-					<span>{{seller.deliveryTime}}送达</span>
+					<span>{{seller.deliveryTime}}分钟送达</span>
 				</div>
 				<div class="acti" @click = 'showacti =!showacti'>
 					<span class="icon" :class="classMap[1]"></span>

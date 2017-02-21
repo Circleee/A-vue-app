@@ -19,6 +19,7 @@
 
 <script>
 import vheader from './comp/header.vue';
+import ratings from './comp/ratings.vue';
 import vdata from './data.js';
 export default {
   components:{
