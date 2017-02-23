@@ -1,20 +1,16 @@
 <template>
 	<div class="starwrap">
-		<div class="star-item"  v-for="item in star" :class="star[$index]"></div>
+		<div class="star-item"  v-for="(item,index) in star"   track-by="$index":class="star[$index]"></div>
 	</div>
 </template>
 
 <script type="text/javascript">
 	export default{
 		props:{
-		score: {
-	        type: Number
-	    }},
-		// data:function () {
-		// 	return {
-		// 		AA:this.seller.score
-		// 	}
-		// },
+			score: {
+		        type: Number
+		    }
+		},
 		computed:{
 			star:function () {
 				var result = [];

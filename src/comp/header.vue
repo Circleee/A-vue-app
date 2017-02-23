@@ -29,8 +29,7 @@
 	<div class="showacti"  v-show="showacti" transition = 'anim'>
 		<div class="saheader">
 			<h4>{{seller.name}}</h4>
-			<!-- <div class="star"></div> -->
-			<star :seller='seller'></star>
+			<star  :score='seller.score' ></star>
 		</div>
 		<div class="favorable">
 			<div class="title">

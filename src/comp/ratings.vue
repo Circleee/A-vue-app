@@ -9,7 +9,7 @@
 			<div class="right">
 				<div class="li">
 					<span>服务态度</span>
-					<star :score= 4.5></star>
+					<star :score= '4.5'></star>
 					<span class="gra">4.5</span>
 				</div>
 				<div class="li">
@@ -30,21 +30,21 @@
 			</div>
 			<div class="ratiul">
 				<ul>
-					<li>
+					<li v-for='item in ratings'>
 						<div class="avatar">
-							<img width="28" height="28" :src="rating.avatar"></div>
+							<img width="28" height="28" :src='item.avatar'></div>
 						<div class="content">
-							<h1 class="name">namename</h1>
+							<h1 class="name">{{item.username}}</h1>
 							<div class="star-wrapper">
-								<star :size="24" :score="rating.score"></star>
-								<span class="delivery" v-show="rating.deliveryTime">dasds</span>
+								<star :score="item.score" ></star>
+								<span class="delivery" >dasds</span>
 							</div>
-							<p class="text">好喝好喝</p>
-							<div class="recommend" v-show="rating.recommend && rating.recommend.length">
+							<p class="text">{{item.text}}</p>
+							<div class="recommend">
 								<span class="icon-thumb_up"></span>
-								<span class="item" v-for="item in rating.recommend">{{item}}</span>
+								<span class="item"></span>
 							</div>
-							<div class="time">{{rating.rateTime | formatDate}}</div>
+							<div class="time">{{item.rateTime | formatDate}}</div>
 						</div>
 					</li>
 				</ul>
@@ -57,16 +57,17 @@
 	import star from './star.vue';
 	import vdata from '../data.js';
 	export default{
+
 		components:{
 			"star":star
 		},
 		data:function () {
 			return{
-				seller:vdata.seller
+				seller:vdata.seller,
+				ratings:vdata.ratings
 			}
 		},
 		prop:["seller"],
-
 	}
 </script>
 <style type="text/css">
@@ -192,13 +193,22 @@
 	.ratingwrap .ratingslist  .ratiul ul li .content .starwrap .star-item{
 		width: 10px;
 		height: 10px;
-		margin: 0px 6px 0px 0px;
+		margin: 0px 2px 0px 0px;
 		line-height: 18px;
 	}
-	.ratingwrap .ratingslist  .ratiul ul li .content.tetx{
-		margin-bottom: 8px;
+	.ratingwrap .ratingslist  .ratiul ul li .content .text{
+	    margin-bottom: 8px;
 	    line-height: 18px;
 	    color: #07111b;
 	    font-size: 12px;
+	    /*color: red*/
+	}
+	.ratingwrap .ratingslist  .ratiul ul li .content .time{
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	    line-height: 12px;
+	    font-size: 10px;
+	    color: #93999f;
 	}
 </style>
