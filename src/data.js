@@ -1127,7 +1127,7 @@ export default {
   "ratings": [
     {
       "username": "3******c",
-      "rateTime": 1469281964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": 30,
       "score": 5,
       "rateType": 0,
@@ -1143,7 +1143,7 @@ export default {
     },
     {
       "username": "2******3",
-      "rateTime": 1469271264000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,
@@ -1156,7 +1156,7 @@ export default {
     },
     {
       "username": "3******b",
-      "rateTime": 1469261964000,
+      "rateTime": "2016-08-21",
       "score": 3,
       "rateType": 1,
       "text": "",
@@ -1165,7 +1165,7 @@ export default {
     },
     {
       "username": "1******c",
-      "rateTime": 1469261864000,
+      "rateTime": "2016-08-21",
       "deliveryTime": 20,
       "score": 5,
       "rateType": 0,
@@ -1175,7 +1175,7 @@ export default {
     },
     {
       "username": "2******d",
-      "rateTime": 1469251264000,
+      "rateTime": "2016-08-21",
       "deliveryTime": 10,
       "score": 4,
       "rateType": 0,
@@ -1185,7 +1185,7 @@ export default {
     },
     {
       "username": "9******0",
-      "rateTime": 1469241964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": 70,
       "score": 1,
       "rateType": 1,
@@ -1195,7 +1195,7 @@ export default {
     },
     {
       "username": "d******c",
-      "rateTime": 1469231964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": 30,
       "score": 5,
       "rateType": 0,
@@ -1205,7 +1205,7 @@ export default {
     },
     {
       "username": "2******3",
-      "rateTime": 1469221264000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,
@@ -1215,7 +1215,7 @@ export default {
     },
     {
       "username": "3******8",
-      "rateTime": 1469211964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 3,
       "rateType": 1,
@@ -1225,7 +1225,7 @@ export default {
     },
     {
       "username": "a******a",
-      "rateTime": 1469201964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,
@@ -1237,7 +1237,7 @@ export default {
     },
     {
       "username": "3******3",
-      "rateTime": 1469191264000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,
@@ -1247,7 +1247,7 @@ export default {
     },
     {
       "username": "t******b",
-      "rateTime": 1469181964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 3,
       "rateType": 1,
@@ -1257,7 +1257,7 @@ export default {
     },
     {
       "username": "f******c",
-      "rateTime": 1469171964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": 15,
       "score": 5,
       "rateType": 0,
@@ -1267,7 +1267,7 @@ export default {
     },
     {
       "username": "k******3",
-      "rateTime": 1469161264000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,
@@ -1277,7 +1277,7 @@ export default {
     },
     {
       "username": "u******b",
-      "rateTime": 1469151964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,
@@ -1287,7 +1287,7 @@ export default {
     },
     {
       "username": "s******c",
-      "rateTime": 1469141964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,
@@ -1297,7 +1297,7 @@ export default {
     },
     {
       "username": "z******3",
-      "rateTime": 1469131264000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 5,
       "rateType": 0,
@@ -1307,7 +1307,7 @@ export default {
     },
     {
       "username": "n******b",
-      "rateTime": 1469121964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 3,
       "rateType": 1,
@@ -1317,7 +1317,7 @@ export default {
     },
     {
       "username": "m******c",
-      "rateTime": 1469111964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": 30,
       "score": 5,
       "rateType": 0,
@@ -1327,7 +1327,7 @@ export default {
     },
     {
       "username": "l******3",
-      "rateTime": 1469101264000,
+      "rateTime": "2016-08-21",
       "deliveryTime": 40,
       "score": 5,
       "rateType": 0,
@@ -1337,7 +1337,7 @@ export default {
     },
     {
       "username": "3******o",
-      "rateTime": 1469091964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 2,
       "rateType": 1,
@@ -1347,7 +1347,7 @@ export default {
     },
     {
       "username": "3******p",
-      "rateTime": 1469081964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,
@@ -1357,7 +1357,7 @@ export default {
     },
     {
       "username": "o******k",
-      "rateTime": 1469071264000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 5,
       "rateType": 0,
@@ -1367,7 +1367,7 @@ export default {
     },
     {
       "username": "k******b",
-      "rateTime": 1469061964000,
+      "rateTime": "2016-08-21",
       "deliveryTime": "",
       "score": 4,
       "rateType": 0,

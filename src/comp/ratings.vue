@@ -26,7 +26,9 @@
 		<div class="ratingsplit"></div>
 		<div class="ratingslist">
 			<div class="ratitag">
-				<span class="tag">全部</span>
+				<span class="tag active">全部</span>
+				<span class="tag">满意</span>
+				<span class="tag bad">不满意</span>
 			</div>
 			<div class="ratiul">
 				<ul>
@@ -37,14 +39,14 @@
 							<h1 class="name">{{item.username}}</h1>
 							<div class="star-wrapper">
 								<star :score="item.score" ></star>
-								<span class="delivery" >dasds</span>
+								<!-- <span class="delivery" >dasds</span> -->
 							</div>
 							<p class="text">{{item.text}}</p>
 							<div class="recommend">
 								<span class="icon-thumb_up"></span>
-								<span class="item"></span>
+								 <span class="item" v-for="item in item.recommend">{{item}}</span>
 							</div>
-							<div class="time">{{item.rateTime | formatDate}}</div>
+							<div class="time">{{item.rateTime}}</div>
 						</div>
 					</li>
 				</ul>
@@ -164,6 +166,10 @@
 	}
 	.ratingwrap .ratingslist .ratitag .tag.active{
 		background: #00a0dc;
+		color: #fff;
+	}
+	.ratingwrap .ratingslist .ratitag .tag.bad{
+		background: rgba(77,85,93,0.2);
 	}
 	.ratingwrap .ratingslist  .ratiul{
 		padding: 0px 18px;
@@ -172,7 +178,7 @@
 		display: -webkit-box;
 	    display: -ms-flexbox;
 	    display: flex;
-	    padding: 18px 0;
+	    padding-top: 18px;
 	    position: relative;
 	}
 	.ratingwrap .ratingslist  .ratiul ul li .avatar{
@@ -210,5 +216,15 @@
 	    line-height: 12px;
 	    font-size: 10px;
 	    color: #93999f;
+	}
+	.ratingwrap .ratingslist  .ratiul ul li .content .recommend .item {
+		padding: 0 6px;
+	    border: 1px solid rgba(7,17,27,0.1);
+	    border-radius: 1px;
+	    color: #93999f;
+	    background: #fff;
+	    display: inline-block;
+	    margin: 0 8px 4px 0;
+	    font-size: 9px;
 	}
 </style>
