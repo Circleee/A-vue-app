@@ -2,7 +2,7 @@
 	<div class="headerwrap">
 		<div class="header">
 			<div class="avatar">
-				<img  width="64" height="64" src="./img/logo.jpg"></div>
+				<img  width="64" height="64" src="./img/logo.png"></div>
 			<div class="title">
 				<div class="brand">
 					<span>{{seller.name}}</span>
@@ -23,7 +23,7 @@
 			<p><span class="bullicon"></span>{{seller.bulletin}}</p>
 		</div>
 		<div class="background">
-		    <img width="256%" height="256%" src="./img/logo.jpg">
+		    <img width="256%" height="256%" src="./img/logo.png">
 		 </div>
 	</div>
 	<div class="showacti"  v-show="showacti" transition = 'anim'>

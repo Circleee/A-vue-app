@@ -67,6 +67,7 @@
 	.goodswrap .menu{
 		flex: 0 0 80px;
 		background: #F3F5F7;
+		overflow: auto;
 	}
 	.goodswrap .menu ul {
 		width: 80px;
@@ -90,6 +91,7 @@
 	}
 	.goodswrap .goods{
 		flex: 1;
+		overflow: auto;
 	}
 	.goodswrap .goods .foodlist ul>h4{
 		line-height: 26px;

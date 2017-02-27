@@ -37,6 +37,28 @@ export default {
 </script>
 
 <style>
+  *{
+    font-family: '微软雅黑';
+    line-height: 1;
+}
+body{font-family:"Microsoft YaHei", "微软雅黑", Arial, sans-serif;}
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dd,dt,img,form{ padding:0px; margin:0px; border:0; font-size:12px;}
+h1,h2,h3,h4,h5,h6 { font-size:12px; font-weight:100;}
+select{ padding:0px; margin:0px; overflow:scroll;}
+td,tr,td { font-size:12px;}
+ul,ol li{ list-style:none;}
+input { padding:0px; margin:0px;}
+.left { float:left;}
+.right { float:right;}
+.clear { clear:both; font-size:0px; height:0px; overflow:hidden;}
+a:link, a:visited, a:hover,a:focus{ text-decoration:none;}
+a:focus{ outline:none;}
+a{
+    text-decoration:none;
+    blr:expression(this.onFocus=this.blur());
+    color: #000;
+}
+
   a{
     text-decoration: none;
   }
