@@ -54,6 +54,17 @@
 				</ul>
 			</div>
 		</div>
+		<div class="splite"></div>
+		<div class="bulletin">
+			<h4 class="title">商家信息</h4>
+			<div class="fcontent">
+				<ul>
+					<li v-for="item in seller.infos">
+						<span>{{item}}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -199,10 +210,11 @@
 	    color: #f01414;
 	}
 	.sellerwrap .bulletin  .fcontent ul li{
-		padding: 16px 12px;
+		padding: 14px 12px;
 	    position: relative;
 	    border-bottom: 1px solid rgba(7,17,27,0.1);
 	    /*font-size: 0;*/
+	    font-size: 12px;
 	}
 	.sellerwrap .bulletin  .fcontent ul li .icon {
 		display: inline-block;
@@ -212,5 +224,23 @@
 	    margin-right: 6px;
 	    background-size: 16px 16px;
 	    background-repeat: no-repeat;
+	}
+	.sellerwrap .bulletin  .fcontent ul li .icon.decrease{
+		background-image: url('img/decrease_1@3x.png');
+	}
+	.sellerwrap .bulletin  .fcontent ul li .icon.decrease{
+		background-image: url('img/decrease_1@3x.png');
+	}
+	.sellerwrap .bulletin  .fcontent ul li .icon.discount{
+		background-image: url('img/discount_1@3x.png');
+	}
+	.sellerwrap .bulletin  .fcontent ul li .icon.guarantee{
+		background-image: url('img/guarantee_1@3x.png');
+	}
+	.sellerwrap .bulletin  .fcontent ul li .icon.invoice{
+		background-image: url('img/invoice_1@3x.png');
+	}
+	.sellerwrap .bulletin  .fcontent ul li .icon.special{
+		background-image: url('img/special_1@3x.png');
 	}
 </style>

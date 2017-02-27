@@ -1,13 +1,13 @@
 <template>
 	<div class="goodswrap">
-		<div class="menu">
+		<div class="menu" v-el:menu>
 			<ul>
-				<li v-for='item in goods'>
+				<li v-for='item in goods' @click='helllo'>
 					<span>{{item.name}}</span>
 				</li>
 			</ul>
 		</div>
-		<div class="goods">
+		<div class="goods" v-el:foods id="cc">
 			<ul class="foodlist">
 				<ul v-for="item in goods">
 					<h4>{{item.name}}</h4>
@@ -32,10 +32,24 @@
 
 <script type="text/javascript">
 	import vdata from '../data.js';
+	import bscroll from 'better-scroll';
 	export default{
+		compiled() {
+	     	console.log('ch');
+	    	this._initscroll
+	    },
 		data:function () {
 			return {
 				goods:vdata.goods
+			}
+		},
+		methods:{
+			_initscroll:function(){
+				this.foodsScroll  =  new bscroll(document.getElementById('cc'),{});
+				this.menuScroll = new bscroll(this.$els.menu,{})
+			},
+			helllo:function(){
+				console.log('cc')
 			}
 		}
 	};
