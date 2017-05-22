@@ -49,7 +49,7 @@
 				this.menuScroll = new bscroll(this.$els.menu,{})
 			},
 			helllo:function(){
-				console.log('cc')
+				
 			}
 		}
 	};
