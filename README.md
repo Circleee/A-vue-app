@@ -1,8 +1,3 @@
-## 在线地址 (https://acircle.cc/food)
-
-
-# cc
-
 > A Vue.js project
 
 ## Build Setup
